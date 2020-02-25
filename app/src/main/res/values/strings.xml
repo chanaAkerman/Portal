@@ -15,4 +15,9 @@
     <string name="menu_send">Send</string>
     <string name="menu_dictionary">Dictionary</string>
 
+    <string-array name="items">
+        <item>שם עצם</item>
+        <item>פועל</item>
+    </string-array>
+
 </resources>

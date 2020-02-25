@@ -4,7 +4,7 @@ import androidx.annotation.NonNull;
 
 public class Word {
     private String Hebrew_value;
-    private String Arabic_value;
+    private String Hebrew_translating;
     private String Italian_value;
     private Type type;
 
@@ -13,13 +13,14 @@ public class Word {
     public Word(String h, String A, String I, Type type)
     {
         this.Hebrew_value = h;
-        this.Arabic_value = A;
+
+        this.Hebrew_translating = A;
         this.Italian_value = I;
         this.type = type;
     }
 
-    public String getArabic_value() {
-        return Arabic_value;
+    public String getHebrew_translating() {
+        return Hebrew_translating;
     }
 
     public String getHebrew_value() {
@@ -38,8 +39,8 @@ public class Word {
         this.type = type;
     }
 
-    public void setArabic_value(String arabic_value) {
-        Arabic_value = arabic_value;
+    public void setHebrew_translating(String hebrew_translating) {
+        Hebrew_translating = hebrew_translating;
     }
 
     public void setHebrew_value(String hebrew_value) {

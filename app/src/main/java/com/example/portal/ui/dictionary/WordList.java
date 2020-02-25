@@ -32,12 +32,26 @@ public class WordList extends ArrayAdapter {
         LayoutInflater inflater = context.getLayoutInflater();
         View listViewItem = inflater.inflate(R.layout.word_list, null, true);
 
-        TextView textViewWord = (TextView) listViewItem.findViewById(R.id.word);
+        TextView textViewWord = listViewItem.findViewById(R.id.word);
+        TextView textViewTranslating = listViewItem.findViewById(R.id.translating);
 
-        Word song = words.get(position);
+        Word word = words.get(position);
 
-        textViewWord.setText(song.getHebrew_value());
+        textViewWord.setText(word.getHebrew_value());
+        textViewTranslating.setText(word.getHebrew_translating());
+
+        listViewItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                itemClick();
+            }
+        });
 
         return listViewItem;
+    }
+
+    public void itemClick()
+    {
+        //TO DO
     }
 }

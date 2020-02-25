@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Word_Package.WordInput">
+
+    <TextView
+        android:id="@+id/heading_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:text="הוספת מילה חדשה"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:textSize="30sp"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading_label">
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ערך בעברית          "
+            android:layout_alignParentRight="true"
+            android:paddingTop="2dp"
+            android:paddingRight="10dp"/>
+
+
+        <EditText
+            android:id="@+id/hebrew_value"
+            android:layout_width="@dimen/nav_header_height"
+            android:layout_height="wrap_content"
+            android:hint="כתוב כאן"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/text_1"
+            android:background="@drawable/round_frame"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_1"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="משמעות בעברית  "
+            android:layout_alignParentRight="true"
+            android:paddingTop="2dp"
+            android:paddingRight="10dp"/>
+
+
+        <EditText
+            android:id="@+id/hebrew_translating"
+            android:layout_width="@dimen/nav_header_height"
+            android:layout_height="wrap_content"
+            android:hint="כתוב כאן"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/text_2"
+            android:background="@drawable/round_frame"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_2"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="תרגום לאיטלקית   "
+            android:layout_alignParentRight="true"
+            android:paddingTop="2dp"
+            android:paddingRight="10dp"/>
+
+
+        <EditText
+            android:id="@+id/italian_translating"
+            android:layout_width="@dimen/nav_header_height"
+            android:layout_height="wrap_content"
+            android:hint="כתוב כאן"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/text_3"
+            android:background="@drawable/round_frame"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_3">
+
+        <TextView
+            android:id="@+id/text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="קטגוריה                "
+            android:layout_alignParentRight="true"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp" />
+
+
+        <TextView
+            android:id="@+id/chosenCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="שפת תקשורת"
+            android:layout_toLeftOf="@id/text_4"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp" />
+
+        <Button
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="בחר"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="70dp">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הוסף"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"/>
+
+</RelativeLayout>
+
