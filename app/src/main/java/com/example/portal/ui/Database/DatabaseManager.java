@@ -21,7 +21,7 @@ public class DatabaseManager {
     public DatabaseManager(CallBack callBack)
     {
         this.database = FirebaseDatabase.getInstance();
-        this.dictionaryRef = database.getReference("Dictionary");
+        this.dictionaryRef = database.getReference("dictionary");
         this.callBack = callBack;
         this.words = new ArrayList<>();
         setDictionaryRef();
@@ -42,6 +42,7 @@ public class DatabaseManager {
         dictionaryRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                words = new ArrayList<>();
                 for (DataSnapshot ds : dataSnapshot.getChildren()) {
                     Word word = ds.getValue(Word.class);
                     words.add(word);

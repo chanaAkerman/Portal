@@ -21,15 +21,14 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 
 public class DictionaryFragment extends Fragment {
-    DictionaryViewModel dictionaryViewModel;
-    DatabaseManager manager;
-    ArrayList<Word> words;
-    ListView listView;
+    private DictionaryViewModel dictionaryViewModel;
+    private DatabaseManager manager;
+    private ArrayList<Word> words;
+    private ListView listView;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        dictionaryViewModel =
-                ViewModelProviders.of(this).get(DictionaryViewModel.class);
+        dictionaryViewModel = ViewModelProviders.of(this).get(DictionaryViewModel.class);
         View root = inflater.inflate(R.layout.fragment_dictionary, container, false);
         /*final TextView textView = root.findViewById(R.id.text_dictionary);
         dictionaryViewModel.getText().observe(this, new Observer<String>() {
@@ -50,16 +49,15 @@ public class DictionaryFragment extends Fragment {
             }
         });
 
-        manager = new DatabaseManager(new CallBack(){
-            public void fetch(){
+        manager = new DatabaseManager(new CallBack() {
+            public void fetch() {
                 words = new ArrayList<>();
 
                 words = manager.getWords();
 
-                if(words==null)
+                if (words == null)
                     listView.setAdapter(null);
-                else
-                {
+                else {
                     WordList wordAdapter = new WordList(getActivity(), words);
                     listView.setAdapter(wordAdapter);
                 }

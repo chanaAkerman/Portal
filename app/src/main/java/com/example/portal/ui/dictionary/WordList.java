@@ -12,7 +12,6 @@ import androidx.annotation.Nullable;
 
 import com.example.portal.R;
 import com.example.portal.ui.Word_Package.Word;
-import com.google.firebase.database.annotations.NotNull;
 
 import java.util.List;
 
@@ -38,7 +37,7 @@ public class WordList extends ArrayAdapter {
         Word word = words.get(position);
 
         textViewWord.setText(word.getHebrew_value());
-        textViewTranslating.setText(word.getHebrew_translating());
+        textViewTranslating.setText(word.getHebrew_proverb());
 
         listViewItem.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,8 +49,9 @@ public class WordList extends ArrayAdapter {
         return listViewItem;
     }
 
-    public void itemClick()
+    private void itemClick()
     {
         //TO DO
     }
+
 }
