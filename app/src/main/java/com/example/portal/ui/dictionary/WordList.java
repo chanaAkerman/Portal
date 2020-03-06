@@ -1,11 +1,13 @@
 package com.example.portal.ui.dictionary;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,7 +17,7 @@ import com.example.portal.ui.Word_Package.Word;
 
 import java.util.List;
 
-public class WordList extends ArrayAdapter {
+public class WordList extends ArrayAdapter<Word> {
     private Activity context;
     private List<Word> words;
 
@@ -34,24 +36,24 @@ public class WordList extends ArrayAdapter {
         TextView textViewWord = listViewItem.findViewById(R.id.word);
         TextView textViewTranslating = listViewItem.findViewById(R.id.translating);
 
-        Word word = words.get(position);
+        final Word word = words.get(position);
 
         textViewWord.setText(word.getHebrew_value());
         textViewTranslating.setText(word.getHebrew_proverb());
 
-        listViewItem.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                itemClick();
-            }
-        });
+//        listViewItem.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                itemClick(word);
+//            }
+//        });
 
         return listViewItem;
     }
 
-    private void itemClick()
+    private void itemClick(Word word)
     {
-        //TO DO
+        //open WordDisplay activity
     }
 
 }

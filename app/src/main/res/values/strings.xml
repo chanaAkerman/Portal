@@ -9,24 +9,24 @@
 
 
     // Delete
-        <string name="hint_hebrew_value">ערך בעברית</string>
-        <string name="hint_italian_value">ערך באיטלקית</string>
-        <string name="hint_arabic_value">ערך בערבית</string>
-        <string name="hint_arabic_pronunciation_value">היגוי המילה בערבית</string>
-        <string name="hint_hebrew_proverb_value">פתגם בעברית המכיל את הערך</string>
-        <string name="hint_italian_proverb_value">תרגום הפתגם לאיטלקית</string>
-        <string name="hint_arabic_proverb_value">תרגום הפתגם לערבית</string>
-        <string name="hint_arabic_dialect">ניב בערבית</string>
-        <string name="hint_note">הערה</string>
-        <string name="btn_add_value">הוסף</string>
-        <string name="err_msg_hebrew_value">הכנס ערך בעברית</string>
-        <string name="err_msg_italian_value">הכנס ערך באיטלקית</string>
-        <string name="err_msg_arabic_value">הכנס ערך בערבית</string>
-        <string name="err_msg_arabic_pronunciation_value">הכנס את היגוי המילה בערבית</string>
-        <string name="err_msg_hebrew_proverb_value">הכנס פתגם בעברית המכיל את הערך</string>
-        <string name="err_msg_italian_proverb_value">הכנס תרגום הפתגם לאיטלקית</string>
-        <string name="err_msg_arabic_proverb_value">הכנס תרגום הפתגם לערבית</string>
-        <string name="err_msg_arabic_dialect">הכנס ניב בערבית</string>
+    <string name="hint_hebrew_value">ערך בעברית</string>
+    <string name="hint_italian_value">ערך באיטלקית</string>
+    <string name="hint_arabic_value">ערך בערבית</string>
+    <string name="hint_arabic_pronunciation_value">היגוי המילה בערבית</string>
+    <string name="hint_hebrew_proverb_value">פתגם בעברית המכיל את הערך</string>
+    <string name="hint_italian_proverb_value">תרגום הפתגם לאיטלקית</string>
+    <string name="hint_arabic_proverb_value">תרגום הפתגם לערבית</string>
+    <string name="hint_arabic_dialect">ניב בערבית</string>
+    <string name="hint_note">הערה</string>
+    <string name="btn_add_value">הוסף</string>
+    <string name="err_msg_hebrew_value">הכנס ערך בעברית</string>
+    <string name="err_msg_italian_value">הכנס ערך באיטלקית</string>
+    <string name="err_msg_arabic_value">הכנס ערך בערבית</string>
+    <string name="err_msg_arabic_pronunciation_value">הכנס את היגוי המילה בערבית</string>
+    <string name="err_msg_hebrew_proverb_value">הכנס פתגם בעברית המכיל את הערך</string>
+    <string name="err_msg_italian_proverb_value">הכנס תרגום הפתגם לאיטלקית</string>
+    <string name="err_msg_arabic_proverb_value">הכנס תרגום הפתגם לערבית</string>
+    <string name="err_msg_arabic_dialect">הכנס ניב בערבית</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>

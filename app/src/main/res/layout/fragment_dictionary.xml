@@ -12,12 +12,10 @@
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@drawable/ic_add" />
 
-    <ListView
+    <com.baoyz.swipemenulistview.SwipeMenuListView
         android:id="@+id/wordsList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
-
-
-
+    
 </FrameLayout>

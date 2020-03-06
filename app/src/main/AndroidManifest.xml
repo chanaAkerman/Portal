@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.Word_Package.WordInput"></activity>
+        <activity android:name=".ui.dictionary.WordDisplay"></activity>
+        <activity android:name=".ui.Word_Package.WordInput" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
